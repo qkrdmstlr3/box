@@ -19,12 +19,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@shell-box/monorepo",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@shell-box/hooks",\
+        "reference": "workspace:packages/hooks"\
+      },\
+      {\
+        "name": "@shell-box/ui",\
+        "reference": "workspace:packages/ui"\
+      },\
+      {\
+        "name": "@shell-box/utils",\
+        "reference": "workspace:packages/utils"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@shell-box/monorepo", ["workspace:."]]\
+      ["@shell-box/hooks", ["workspace:packages/hooks"]],\
+      ["@shell-box/monorepo", ["workspace:."]],\
+      ["@shell-box/ui", ["workspace:packages/ui"]],\
+      ["@shell-box/utils", ["workspace:packages/utils"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -1465,6 +1480,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@shell-box/hooks", [\
+        ["workspace:packages/hooks", {\
+          "packageLocation": "./packages/hooks/",\
+          "packageDependencies": [\
+            ["@shell-box/hooks", "workspace:packages/hooks"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@shell-box/monorepo", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -1486,6 +1510,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"],\
             ["ultra-runner", "npm:3.10.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@shell-box/ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["@shell-box/ui", "workspace:packages/ui"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@shell-box/utils", [\
+        ["workspace:packages/utils", {\
+          "packageLocation": "./packages/utils/",\
+          "packageDependencies": [\
+            ["@shell-box/utils", "workspace:packages/utils"]\
           ],\
           "linkType": "SOFT"\
         }]\

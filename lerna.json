@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "packages/hooks/*",
+    "packages/ui/*",
+    "packages/utils/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

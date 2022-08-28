@@ -1,7 +1,17 @@
 {
   "name": "@shell-box/monorepo",
   "version": "0.0.0",
-  "packageManager": "yarn@3.2.3",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/hooks",
+    "packages/ui",
+    "packages/utils"
+  ],
+  "scripts": {
+    "format": "eslint --fix . --ext .js,.ts,.tsx,.json",
+    "lerna:publish": "lerna publish"
+  },
   "devDependencies": {
     "@types/eslint": "^8.4.6",
     "@types/prettier": "^2.7.0",
@@ -19,5 +29,6 @@
     "prettier": "^2.7.1",
     "typescript": "^4.8.2",
     "ultra-runner": "^3.10.5"
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
