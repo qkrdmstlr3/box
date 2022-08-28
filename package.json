@@ -1,0 +1,4 @@
+{
+  "name": "@shell-box/monorepo",
+  "packageManager": "yarn@3.2.3"
+}
