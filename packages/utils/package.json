@@ -1,6 +1,6 @@
 {
   "name": "@shell-box/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "yarn@3.2.3",
   "publishConfig": {
     "access": "public"
