@@ -1,9 +1,5 @@
 {
-  "packages": [
-    "packages/hooks/*",
-    "packages/ui/*",
-    "packages/utils/*"
-  ],
+  "packages": ["packages/hooks/*", "packages/react-utils/*", "packages/ui/*", "packages/utils/*"],
   "publishConfig": {
     "access": "public"
   },

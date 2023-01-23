@@ -5,6 +5,7 @@
   "license": "MIT",
   "workspaces": [
     "packages/hooks",
+    "packages/react-utils",
     "packages/ui",
     "packages/utils"
   ],

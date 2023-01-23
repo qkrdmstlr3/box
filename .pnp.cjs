@@ -25,6 +25,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/hooks"\
       },\
       {\
+        "name": "@shell-box/react-utils",\
+        "reference": "workspace:packages/react-utils"\
+      },\
+      {\
         "name": "@shell-box/ui",\
         "reference": "workspace:packages/ui"\
       },\
@@ -38,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@shell-box/hooks", ["workspace:packages/hooks"]],\
       ["@shell-box/monorepo", ["workspace:."]],\
+      ["@shell-box/react-utils", ["workspace:packages/react-utils"]],\
       ["@shell-box/ui", ["workspace:packages/ui"]],\
       ["@shell-box/utils", ["workspace:packages/utils"]]\
     ],\
@@ -1538,6 +1543,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@shell-box/react-utils", [\
+        ["workspace:packages/react-utils", {\
+          "packageLocation": "./packages/react-utils/",\
+          "packageDependencies": [\
+            ["@shell-box/react-utils", "workspace:packages/react-utils"],\
+            ["@types/react", "npm:17.0.53"],\
+            ["@types/react-dom", "npm:17.0.18"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:56e538ba83007bd1f4e73a04ca420ef80f8c2f16e9df61decc60bb9e1e0e0f82469c113fe1328db04ee7c07ef8a2d5f8ca1c6978786fb29037f1fe193a768318#npm:18.2.0"],\
+            ["tsup", "virtual:56e538ba83007bd1f4e73a04ca420ef80f8c2f16e9df61decc60bb9e1e0e0f82469c113fe1328db04ee7c07ef8a2d5f8ca1c6978786fb29037f1fe193a768318#npm:6.5.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@shell-box/ui", [\
         ["workspace:packages/ui", {\
           "packageLocation": "./packages/ui/",\
@@ -1551,7 +1571,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/utils", {\
           "packageLocation": "./packages/utils/",\
           "packageDependencies": [\
-            ["@shell-box/utils", "workspace:packages/utils"]\
+            ["@shell-box/utils", "workspace:packages/utils"],\
+            ["tsup", "virtual:56e538ba83007bd1f4e73a04ca420ef80f8c2f16e9df61decc60bb9e1e0e0f82469c113fe1328db04ee7c07ef8a2d5f8ca1c6978786fb29037f1fe193a768318#npm:6.5.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
         }]\
