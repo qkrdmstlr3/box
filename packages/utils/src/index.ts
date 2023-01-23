@@ -1,1 +1,1 @@
-export const hello = () => {};
+export { isClient } from './isClient';

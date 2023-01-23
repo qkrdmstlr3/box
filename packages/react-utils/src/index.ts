@@ -1,1 +1,1 @@
-export const hello = () => {};
+export { mergeProps } from './mergeProps';
