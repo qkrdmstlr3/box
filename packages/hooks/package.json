@@ -27,6 +27,6 @@
     "typescript": "4.7.4"
   },
   "dependencies": {
-    "@shell-box/utils": "workspace:^"
+    "@shell-box/utils": "^0.0.2"
   }
 }
